@@ -16,13 +16,13 @@ const Hero = () => {
                 <input
                     type='text'
                     placeholder='Enter the Type of business you want to do...'
-                    className='lg:w-[350px]  lg:mr-0 mr-[60px] rounded-l-md lg:p-3 text-[0.8rem]   p-0 border-t border-b lg:border-l border-gray-300'
+                    className='w-[350px]  lg:mr-0 mr-[60px] rounded-l-md lg:p-3 text-[0.8rem]  lg:ml-0 ml-[3rem]  pl-4 border-t border-b lg:border-l border-gray-300'
                 />
                 <div className='border-t border-b border-r border-gray-300 h-full w-2'></div>
                 <input
                     type='text'
                     placeholder='Enter another placeholder...'
-                    className='w-[350px] lg:flex hidden -translate-x-1 rounded-r-md p-3 border-t border-b border-r border-gray-300'
+                    className='w-[350px] lg:flex hidden -translate-x-1 rounded-r-md p-3 border-t text-[0.8rem] border-b border-r border-gray-300'
                 />
                 <div className='absolute lg:right-3  right-12 transform  bg-yellow-400 h-full lg:pr-3 translate-x-2 pl-2 rounded-r-md'>
                     <IoSearchOutline className='text-white lg:translate-y-3 -translate-y-0 lg:translate-x-0 -translate-x-1 lg:text-2xl text-xl' />
