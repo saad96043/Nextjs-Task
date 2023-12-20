@@ -1,5 +1,7 @@
 import React from 'react'
 import { About, Location, SiteDirectory, categories } from '../data/Footerdata'
+import yellowLogo from "../../assets/yellowLogo.png"
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -57,7 +59,7 @@ const Footer = () => {
             </div>
 
             <div className='bg-black text-white flex justify-around text-[0.7rem] items-center pt-12 pb-10'>
-                <p>Logo</p>
+                <Image src={yellowLogo} width={40}/>
                 <div className='flex flex-col gap-2'>
                     <p className='font-bold'>About us</p>
                     <p>We delivers culinary delights to your doorstep. Enjoy a diverse menu, prompt service, <br/> and a hassle-free dining experience. Order now for a taste of convenience!"</p>
