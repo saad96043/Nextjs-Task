@@ -7,9 +7,9 @@ const Footer = () => {
     return (
 
         <div>
-            <div className='bg-black text-yellow-400 mt-16 flex justify-around'>
+            <div className='bg-black text-yellow-400 mt-16 flex justify-around lg:w-full w-[500px]'>
                 <div className='flex flex-col justify-evenly gap-4 pt-16 '>
-                    <p className='font-bold text-sm'>Popular Categories</p>
+                    <p className='font-bold text-sm'>Popular</p>
                     {
                         categories.map((data) => (
                             <div key={data.id}>
@@ -20,7 +20,7 @@ const Footer = () => {
                     }
                 </div>
                 <div className='flex flex-col justify-evenly gap-4 pt-16 '>
-                    <p className='font-bold text-sm'>Popular Locations</p>
+                    <p className='font-bold text-sm'>Popular</p>
 
                     {
                         Location.map((data) => (
@@ -58,9 +58,9 @@ const Footer = () => {
 
             </div>
 
-            <div className='bg-black text-white flex justify-around text-[0.7rem] items-center pt-12 pb-10'>
+            <div className='bg-black text-white flex justify-around text-[0.7rem] items-center lg:pt-12 pt-3 pb-3 lg:pb-10 lg:w-full w-[500px]'>
                 <Image src={yellowLogo} width={40}/>
-                <div className='flex flex-col gap-2'>
+                <div className='lg:flex lg:flex-col hidden gap-2'>
                     <p className='font-bold'>About us</p>
                     <p>We delivers culinary delights to your doorstep. Enjoy a diverse menu, prompt service, <br/> and a hassle-free dining experience. Order now for a taste of convenience!"</p>
                 </div>

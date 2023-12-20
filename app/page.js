@@ -13,11 +13,11 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Navbar />
       <Hero />
       <Business />
-      <div className='w-10/12 mx-auto'>
+      <div className='lg:w-10/12  lg:mx-auto'>
         <Food />
         <Categories />
         <Review />

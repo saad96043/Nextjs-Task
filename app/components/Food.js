@@ -15,9 +15,9 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const Food = () => {
     return (
         <div className='pb-10'>
-            <h2 className='text-2xl'>Featured Business</h2>
-            <div className='bg-yellow-300 w-[1070px] h-[3px]'></div>
-            <div className='flex justify-around pt-4 gap-7'>
+            <h2 className='text-2xl lg:ml-0 ml-9'>Featured Business</h2>
+            <div className='bg-yellow-300 lg:w-[1070px] w-[290px] lg:ml-0 ml-9 h-[3px]'></div>
+            <div className='lg:flex lg:flex-row lg:justify-around flex-col flex  items-center pt-4 gap-7'>
                 {
                     data.map((data) => (
                         <div key={data.id} className='border flex flex-col gap-2'>

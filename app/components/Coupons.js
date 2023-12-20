@@ -15,8 +15,8 @@ const Coupons = () => {
   return (
       <div className='pb-10 w-10/12 mx-auto mt-16'>
           <h2 className='text-2xl'>New! Coupons and Deals</h2>
-          <div className='bg-yellow-300 w-[1070px] h-[3px]'></div>
-          <div className='flex justify-around pt-4 gap-7'>
+          <div className='bg-yellow-300 lg:w-[1070px] w-[290px] h-1'></div>
+          <div className='lg:flex lg:flex-row flex flex-col justify-around pt-4 gap-7'>
               {
                   data.map((data) => (
                       <div key={data.id} className='border flex flex-col gap-2'>

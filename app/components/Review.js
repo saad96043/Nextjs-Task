@@ -6,13 +6,13 @@ import { CgProfile } from "react-icons/cg";
 const Review = () => {
     return (
         <div className='mt-5'>
-            <h2 className='text-2xl'>Customer Reviews</h2>
-            <div className='bg-yellow-300 w-[1070px] h-[3px]'></div>
+            <h2 className='text-2xl lg:ml-0 ml-9'>Customer Reviews</h2>
+            <div className='bg-yellow-300 lg:w-[1070px] w-[290px] h-[3px] lg:ml-0 ml-9'></div>
 
 
             <div className='pt-5 pb-10 flex justify-evenly gap-16'>
-                <div className=' '>
-                    <Image src={review} height={300} width={610} />
+                <div className='lg:flex hidden lg:flex-col'>
+                    <Image src={review} height={300} width={610} className='rounded-md' />
                     <p className='text-[0.8rem] text-yellow-400 pt-3'>vishaldfw</p>
                     <p className='text-[0.6rem]'>Write a review</p>
                     <p>Arzona Luxuru Art Club</p>
@@ -23,13 +23,13 @@ const Review = () => {
                         <button className='border-red-500 rounded-md p-1 border'>Love</button>
                     </div>
                 </div>
-                <div className='flex flex-wrap gap-10'>
+                <div className='lg:flex lg:flex-row flex flex-col items-center flex-wrap gap-10 lg:mr-0 mr-9'>
                     {
                         review1.map((data) => (
                             <div key={data.id}>
                                 <div className='flex gap-2'>
                                     <div className='relative'>
-                                        <Image height={200} width={200} src={data.image} />
+                                        <Image height={200} width={200} src={data.image} className='rounded-lg' />
                                         <p className='absolute text-gray-500 top-8 text-4xl -right-4'><CgProfile /></p>
                                     </div>
                                     <div className='text-[0.7rem] text-gray-500'>

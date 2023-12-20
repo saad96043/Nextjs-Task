@@ -8,16 +8,16 @@ import b3 from '../../assets/b3.jpeg'
 const Featured = () => {
   return (
       <div className='mt-5'>
-          <h2 className='text-2xl'>Featured Restaurants</h2>
-          <div className='bg-yellow-300 w-[1070px] h-[3px]'></div>
+          <h2 className='text-2xl lg:ml-0 ml-9'>Featured Restaurants</h2>
+          <div className='bg-yellow-300 lg:w-[1070px] w-[290px] h-[3px] lg:ml-0 ml-9'></div>
 
-          <div className='flex justify-center gap-4'>
-              <div className='mt-5 flex flex-col gap-4 rounded-md w-[80%]'>
+          <div className='flex justify-center gap-4 lg:ml-0 ml-9'>
+              <div className='mt-5 flex flex-col gap-4 rounded-md lg:w-[50%] w-[100%] lg:items-center justify-center'>
                   {
 
                       data.map((data) => (
                           <div key={data.id}>
-                              <div className='flex gap-3 border'>
+                              <div className='flex gap-3 border  lg:max-w-[500px] lg:min-w-[500px] '>
                                   <Image src={data.image} height={200} width={200} />
                                   <div className='text-[0.7rem] text-gray-500'>
                                       <p>{data.type}</p>
@@ -30,7 +30,7 @@ const Featured = () => {
                                       <p>{data.address}</p>
                                   </div>
                               </div>
-                              <div className='flex border justify-around gap-1b text-[0.8rem] mt-3 text-gray-500'>
+                              <div className='flex border justify-around gap-1b text-[0.8rem] mt-3 text-gray-500  lg:max-w-[500px] lg:min-w-[500px] '>
                                   <div className='flex items-center'>
                                       <p><IoCall /></p>
                                       <p>{data.call}</p>
@@ -45,7 +45,7 @@ const Featured = () => {
                       ))
                   }
               </div>
-              <div className='mt-5'>
+              <div className='lg:mt-5 lg:flex hidden'>
                 <Image src={b3} height={900} width={400} className='h-[400px]'/>
               </div>
           </div>

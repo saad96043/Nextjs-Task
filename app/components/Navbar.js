@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import yellowLogo from "../../assets/yellowLogo.png"
 const Navbar = () => {
   return (
-    <div className='flex justify-between bg-black pt-2 pl-6 pr-6 pb-1'>
+    <div className='flex justify-between bg-black pt-2 pl-6 w-[500px] lg:w-full pr-6  pb-1'>
       <Image src={yellowLogo} height={200} width={40} />
       <div className='flex gap-5 items-center  justify-around'>
         <div className='flex items-center gap-1'>
